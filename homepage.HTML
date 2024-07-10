@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li class="nav-item">
+                <a class="nav-link home-link" href="homepage.HTML">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="taskcreation.html">Task Creation</a>
+            </li>
+            <div class="dropdown">
+                <button class="dropbtn">View All Tasks</button>
+                <div class="dropdown-content">
+                    <a href="viewtask.html#dashboard">View Dashboard</a>
+                    <a href="viewtask.html#edit-task">Edit Task</a>
+                </div>
+            </div>
+            </li>
+            <div class="dropdown">
+                <button class="dropbtn">Account</button>
+                <div class="dropdown-content">
+                    <a href="account.html#register">Register</a>
+                    <a href="account.html#login">Login</a>
+                </div>
+            </div>     
+        </ul>
+    </nav>
+    <main>
+        <div class="jumbotron text-center">
+            <h1><img src="task2.png" alt="TASK1"></h1>
+            <p class="lead">Management Application</p>
+            <hr class="my-4">
+            <p>Explore our features to know more.</p>
+            <a class="btn btn-primary btn-lg" href="#features" role="button">Learn more</a>
+        </div>
+        <div id="features" class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="timetracker.jpg" class="card-img-top" alt="Time Tracker">
+                        <div class="card-body">
+                            <h5 class="card-title">Time Tracker</h5>
+                            <p class="card-text">Manage your time efficiently to ensure task completion.</p>
+                            <a href="taskcreation.html" class="btn btn-primary">Create a Task</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="collaboration.jpg" class="card-img-top" alt="Team Collaboration" width="200">
+                        <div class="card-body">
+                            <h5 class="card-title">Team Collaboration</h5>
+                            <p class="card-text">Work with one or more people to complete a task.</p>
+                            <a href="taskcreation.html" class="btn btn-primary">Create a Task</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="progresstracker.png" class="card-img-top" alt="Progress Tracker">
+                        <div class="card-body">
+                            <h5 class="card-title">Progress Tracker</h5>
+                            <p class="card-text">Keep track of your progress to make sure you're on track.</p>
+                            <a href="taskcreation.html" class="btn btn-primary">Create a Task</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Sara Angsioco. All rights reserved.</p>
+    </footer>
+</body>
+</html>

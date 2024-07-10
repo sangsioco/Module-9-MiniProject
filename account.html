@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li class="nav-item">
+                <a class="nav-link home-link" href="homepage.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="taskcreation.html">Task Creation</a>
+            </li>
+            <div class="dropdown">
+                <button class="dropbtn">View All Tasks</button>
+                <div class="dropdown-content">
+                    <a href="viewtask.html#dashboard">View Dashboard</a>
+                    <a href="viewtask.html#edit-task">Edit Task</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Account</button>
+                <div class="dropdown-content">
+                    <a href="account.html#register">Register</a>
+                    <a href="account.html#login">Login</a>
+                </div>
+            </div>  
+        </ul>
+    </nav>
+
+    <div class="container mt-4">
+        <!-- Register Card -->
+        <div id="register" class="card form-content">
+            <div class="card-body">
+                <h2 class="card-title">Register</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="username">Username</label>
+                        <input type="text" class="form-control" id="username" placeholder="Enter username">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email address</label>
+                        <input type="email" class="form-control" id="email" placeholder="Enter email">
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" class="form-control" id="password" placeholder="Password">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Register</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Login Card -->
+        <div id="login" class="card form-content">
+            <div class="card-body">
+                <h2 class="card-title">Login</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="loginUsername">Username</label>
+                        <input type="text" class="form-control" id="loginUsername" placeholder="Enter username">
+                    </div>
+                    <div class="form-group">
+                        <label for="loginPassword">Password</label>
+                        <input type="password" class="form-control" id="loginPassword" placeholder="Password">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Login</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <footer class="text-center py-3" style="background-color: #e272db;">
+        <p>&copy; 2024 Sara Angsioco. All rights reserved.</p>
+    </footer>
+</body>
+</html>

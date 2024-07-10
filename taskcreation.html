@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Creation</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li class="nav-item">
+                <a class="nav-link home-link" href="homepage.HTML">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="taskcreation.html">Task Creation</a>
+            </li>
+            <div class="dropdown">
+                <button class="dropbtn">View All Tasks</button>
+                <div class="dropdown-content">
+                    <a href="viewtask.html#dashboard">View Dashboard</a>
+                    <a href="viewtask.html#edit-task">Edit Task</a>
+                </div>
+            </div>
+            </li>
+            <div class="dropdown">
+                <button class="dropbtn">Account</button>
+                <div class="dropdown-content">
+                    <a href="account.html#register">Register</a>
+                    <a href="account.html#login">Login</a>
+                </div>
+            </div>     
+        </ul>
+    </nav>
+    <div class="container mt-4">
+        <div class="card">
+            <div class="card-header">
+                <h2 class="card-title">Create a Task</h2>
+            </div>
+            <div class="card-body">
+                <form>
+                    <div class="form-group">
+                        <label for="category">Category</label>
+                        <select class="form-control" id="category">
+                            <option value="Work">Work</option>
+                            <option value="Personal">Personal</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="taskTitle">Task Title</label>
+                        <input type="text" class="form-control" id="taskTitle" placeholder="Enter task title" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="taskDescription">Task Description</label>
+                        <textarea class="form-control" id="taskDescription" rows="3" placeholder="Enter task description" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="taskDueDate">Due Date</label>
+                        <input type="date" class="form-control" id="taskDueDate" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="taskPriority">Priority</label>
+                        <select class="form-control" id="taskPriority" required>
+                            <option value="">Select Priority</option>
+                            <option value="Low">Low</option>
+                            <option value="Medium">Medium</option>
+                            <option value="High">High</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="repeatTask">Repeat Task</label>
+                        <select class="form-control" id="repeatTask">
+                            <option value="">Never</option>
+                            <option value="Daily">Daily</option>
+                            <option value="Weekly">Weekly</option>
+                            <option value="Monthly">Monthly</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="teamCollaborate">Team Collaboration</label>
+                        <input type="text" class="form-control" id="teamCollaborate" placeholder="Enter team members or email addresses">
+                    </div>
+                    <div class="form-group">
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="trackProgress">
+                            <label class="form-check-label" for="trackProgress">Track Progress</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="timeTracker">
+                            <label class="form-check-label" for="timeTracker">Time Tracker</label>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Create Task</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <footer class="text-center py-3" style="background-color: #e272db;">
+        <p>&copy; 2024 Sara Angsioco. All rights reserved.</p>
+    </footer>
+</body>
+</html>
